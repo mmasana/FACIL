@@ -119,6 +119,6 @@ If you want to cite the framework feel free to use this preprint citation while 
 
 ---
 
-The basis of FACIL was made possible thanks to [Marc Masana](https://github.com/mmasana),
+The basis of FACIL is made possible thanks to [Marc Masana](https://github.com/mmasana),
 [Xialei Liu](https://github.com/xialeiliu), [Bartlomiej Twardowski](https://github.com/btwardow)
-and [Mikel Menta](https://github.com/mkmenta). Feel free to contribute or propose new features by opening an issue!
+and [Mikel Menta](https://github.com/mkmenta). Code structure is inspired by [HAT](https://github.com/joansj/hat.). Feel free to contribute or propose new features by opening an issue!
