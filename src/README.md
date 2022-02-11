@@ -15,9 +15,9 @@ followed by general options:
 
 and specific options for each of the code parts (corresponding to folders):
   
-* `--approach`: learning approach used (default='finetuning') [[more](approaches/README.md)]
-* `--datasets`: dataset or datasets used (default=['cifar100']) [[more](datasets/README.md)]
-* `--network`: network architecture used (default='resnet32') [[more](networks/README.md)]
+* `--approach`: learning approach used (default='finetuning') [[more](approach)]
+* `--datasets`: dataset or datasets used (default=['cifar100']) [[more](datasets)]
+* `--network`: network architecture used (default='resnet32') [[more](networks)]
 * `--log`: loggers used (default='disk') [[more](loggers/README.md)]
 
 go to each of their respective readme to see all available options for each of them.
@@ -31,7 +31,7 @@ The bias-correction approaches are IL2M, BiC and LUCIR (orange).
 ![alt text](../docs/_static/cil_survey_approaches.png "Survey approaches")
 
 More approaches will be included in the future. To learn more about them refer to the readme in
-[src/approaches](approaches).
+[src/approach](approaches).
 
 ## Datasets
 To learn about the dataset management refer to the readme in [src/datasets](datasets).
