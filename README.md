@@ -42,11 +42,17 @@ experiment runs with one task on one dataset, results would be equivalent to 'co
 | non-incremental supervised learning | yes | yes | 1 |
 
 Current available approaches include:
-<div align="center">
-<p align="center"><b>
-  Finetuning • Freezing • Joint
 
-  LwF • iCaRL • EWC • PathInt • MAS • RWalk • EEIL • LwM • DMC • BiC • LUCIR • IL2M
+<div align="center"><p align="center"><b>
+
+  [Finetuning](./src/approach/finetuning.py) • [Freezing](./src/approach/freezing.py) • [Joint](./src/approach/joint.py)
+
+  [LwF](./src/approach/lwf.py) • [iCaRL](./src/approach/icarl.py) • [EWC](./src/approach/ewc.py) • 
+  [PathInt](./src/approach/path_integral.py) • [MAS](./src/approach/mas.py) • [RWalk](./src/approach/r_walk.py) • 
+  [EEIL](./src/approach/eeil.py) • [LwM](./src/approach/lwm.py) • [DMC](./src/approach/dmc.py) • 
+  [BiC](./src/approach/bic.py) • [LUCIR](./src/approach/lucir.py) • [IL2M](./src/approach/il2m.py) •
+  [GDumb](./src/approach/gdumb.py)
+
 </b></p>
 </div>
 

@@ -36,7 +36,7 @@ class Appr(Inc_Learning_Appr):
         """Returns a parser containing the approach specific parameters"""
         parser = ArgumentParser()
         parser.add_argument('--regularization', default='cutmix', required=False,
-                            help='Use cutmix regularization (default=%(default)s)')
+                            help='Use regularization (default=%(default)s)')
         return parser.parse_known_args(args)
 
     def train_loop(self, t, trn_loader, val_loader):

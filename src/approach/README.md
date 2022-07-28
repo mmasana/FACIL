@@ -182,3 +182,10 @@ can be combined with Freezing by using `--freeze-after num_task (int)`. However,
 `--approach il2m`
 [ICCV 2019](https://openaccess.thecvf.com/content_ICCV_2019/papers/Belouadah_IL2M_Class_Incremental_Learning_With_Dual_Memory_ICCV_2019_paper.pdf)
 | [code](https://github.com/EdenBelouadah/class-incremental-learning/tree/master/il2m)
+
+### GDumb
+`--approach gdumb`
+[ECCV 2020](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123470511.pdf)
+| [code](https://github.com/drimpossible/GDumb)
+
+* `--regularization`: Use regularization (default='cutmix')
