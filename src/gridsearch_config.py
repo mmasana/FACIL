@@ -65,6 +65,8 @@ class GridSearchConfig():
             'r_walk': {
                 'lamb': [20],
             },
+            'gdumb': {
+            },
         }
         self.current_lr = self.params['general']['lr'][0]
         self.current_tradeoff = 0
