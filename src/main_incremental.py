@@ -91,8 +91,8 @@ def main(argv=None):
     parser.add_argument('--eval-on-train', action='store_true',
                         help='Show train loss and accuracy (default=%(default)s)')
     # gridsearch args
-    parser.add_argument('--gridsearch-tasks', default=-1, type=int,
-                        help='Number of tasks to apply GridSearch (-1: all tasks) (default=%(default)s)')
+    parser.add_argument('--gridsearch-tasks', default=0, type=int,
+                        help='Number of tasks to apply GridSearch (default=%(default)s)')
 
     # Args -- Incremental Learning Framework
     args, extra_args = parser.parse_known_args(argv)
