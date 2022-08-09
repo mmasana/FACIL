@@ -4,6 +4,7 @@ import torch
 import argparse
 import importlib
 import numpy as np
+import torch.multiprocessing
 from functools import reduce
 
 import utils
@@ -120,6 +121,8 @@ def main(argv=None):
     else:
         print('WARNING: [CUDA unavailable] Using CPU instead!')
         device = 'cpu'
+    # In case the dataset is too large
+    torch.multiprocessing.set_sharing_strategy('file_system')
     # Multiple gpus
     # if torch.cuda.device_count() > 1:
     #     self.C = torch.nn.DataParallel(C)
