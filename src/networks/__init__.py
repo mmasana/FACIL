@@ -1,6 +1,6 @@
 from torchvision import models
 
-from .lenet import LeNet
+from .lenet import lenet
 from .vggnet import VggNet
 from .resnet32 import resnet32
 
