@@ -30,7 +30,7 @@ class LeNetArch(nn.Module):
         return out
 
 
-def lenet(pretrained=False, **kwargs):
+def LeNet(pretrained=False, **kwargs):
     if pretrained:
         raise NotImplementedError
     return LeNetArch(**kwargs)
