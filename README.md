@@ -109,11 +109,13 @@ Please check the MIT license that is listed in this repository.
 ## Cite
 If you want to cite the framework feel free to use this preprint citation while we await publication:
 ```bibtex
-@article{masana2020class,
-  title={Class-incremental learning: survey and performance evaluation},
+@article{masana2022class,
+  title={Class-Incremental Learning: Survey and Performance Evaluation on Image Classification},
   author={Masana, Marc and Liu, Xialei and Twardowski, Bartlomiej and Menta, Mikel and Bagdanov, Andrew D and van de Weijer, Joost},
-  journal={arXiv preprint arXiv:2010.15277},
-  year={2020}
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  doi={10.1109/TPAMI.2022.3213473},
+  pages={1-20},
+  year={2022}
 }
 ```
 
