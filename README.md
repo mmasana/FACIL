@@ -23,7 +23,7 @@
 FACIL started as code for the paper:  
 _**Class-incremental learning: survey and performance evaluation**_  
 *Marc Masana, Xialei Liu, Bartlomiej Twardowski, Mikel Menta, Andrew D. Bagdanov, Joost van de Weijer*  
-([arxiv](https://arxiv.org/abs/2010.15277))
+([TPAMI](https://ieeexplore.ieee.org/abstract/document/9915459)) ([arxiv](https://arxiv.org/abs/2010.15277))
 
 It allows to reproduce the results in the paper as well as provide a (hopefully!) helpful framework to develop new
 methods for incremental learning and analyse existing ones. Our idea is to expand the available approaches
@@ -37,7 +37,7 @@ experiment runs with one task on one dataset, results would be equivalent to 'co
 
 | Setting | task-ID at train time | task-ID at test time | # of tasks |
 | -----   | ------------------------- | ------------------------ | ------------ |
-| [class-incremental learning](https://arxiv.org/pdf/2010.15277.pdf) | yes | no | ≥1 |
+| [class-incremental learning](https://ieeexplore.ieee.org/abstract/document/9915459) | yes | no | ≥1 |
 | [task-incremental learning](https://ieeexplore.ieee.org/abstract/document/9349197) | yes | yes | ≥1 |
 | non-incremental supervised learning | yes | yes | 1 |
 
@@ -111,11 +111,13 @@ If you want to cite the framework feel free to use this preprint citation while 
 ```bibtex
 @article{masana2022class,
   title={Class-Incremental Learning: Survey and Performance Evaluation on Image Classification},
-  author={Masana, Marc and Liu, Xialei and Twardowski, Bartlomiej and Menta, Mikel and Bagdanov, Andrew D and van de Weijer, Joost},
+  author={Masana, Marc and Liu, Xialei and Twardowski, Bartłomiej and Menta, Mikel and Bagdanov, Andrew D. and van de Weijer, Joost},
   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
   doi={10.1109/TPAMI.2022.3213473},
-  pages={1-20},
-  year={2022}
+  year={2023},
+  volume={45},
+  number={5},
+  pages={5513-5533}}
 }
 ```
 
