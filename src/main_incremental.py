@@ -4,6 +4,7 @@ import torch
 import argparse
 import importlib
 import numpy as np
+import torch.multiprocessing
 from functools import reduce
 
 import utils
@@ -91,8 +92,8 @@ def main(argv=None):
     parser.add_argument('--eval-on-train', action='store_true',
                         help='Show train loss and accuracy (default=%(default)s)')
     # gridsearch args
-    parser.add_argument('--gridsearch-tasks', default=-1, type=int,
-                        help='Number of tasks to apply GridSearch (-1: all tasks) (default=%(default)s)')
+    parser.add_argument('--gridsearch-tasks', default=0, type=int,
+                        help='Number of tasks to apply GridSearch (default=%(default)s)')
 
     # Args -- Incremental Learning Framework
     args, extra_args = parser.parse_known_args(argv)
@@ -120,6 +121,8 @@ def main(argv=None):
     else:
         print('WARNING: [CUDA unavailable] Using CPU instead!')
         device = 'cpu'
+    # In case the dataset is too large
+    torch.multiprocessing.set_sharing_strategy('file_system')
     # Multiple gpus
     # if torch.cuda.device_count() > 1:
     #     self.C = torch.nn.DataParallel(C)

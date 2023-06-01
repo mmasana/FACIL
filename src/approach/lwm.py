@@ -160,9 +160,11 @@ class Appr(Inc_Learning_Appr):
 
     def attention_distillation_loss(self, attention_map1, attention_map2):
         """Calculates the attention distillation loss"""
-        attention_map1 = torch.norm(attention_map1, p=2, dim=1)
-        attention_map2 = torch.norm(attention_map2, p=2, dim=1)
-        return torch.norm(attention_map2 - attention_map1, p=1, dim=1).sum(dim=1).mean()
+        attention_map1 = torch.nn.functional.normalize(attention_map1.view(attention_map1.size(0), -1),
+                                                       p=2, dim=1, eps=1e-12, out=None)
+        attention_map2 = torch.nn.functional.normalize(attention_map2.view(attention_map1.size(0), -1),
+                                                       p=2, dim=1, eps=1e-12, out=None)
+        return torch.norm(attention_map2 - attention_map1, p=1, dim=1).mean()
 
     def cross_entropy(self, outputs, targets, exp=1.0, size_average=True, eps=1e-5):
         """Calculates cross-entropy with temperature scaling"""
